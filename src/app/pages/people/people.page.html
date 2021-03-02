@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      People
+    </ion-title>
+    <ion-buttons slot="end" collapse="condense">
+      <ion-button>
+        <ion-icon name="search" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">People</ion-title>
+      <ion-buttons slot="end" collapse="condense">
+        <ion-button>
+          <ion-icon name="search" color="dark"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item *ngFor="let person of people">
+      <ion-avatar slot="start">
+        <img [src]="person.photo">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ person.name }}</h2>
+        <p>{{ person.summary }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- add new person -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="person-add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
