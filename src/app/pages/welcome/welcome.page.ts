@@ -21,7 +21,6 @@ export class WelcomePage {
 
   get notificationPhoto(): string {
     const platform = this.platform.is('ios') ? 'ios' : 'android';
-    console.log(platform);
     return `../../../assets/notif-${platform}.png`;
   }
 

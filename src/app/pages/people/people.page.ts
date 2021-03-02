@@ -8,23 +8,31 @@ import {Component, OnInit} from '@angular/core';
 export class PeoplePage {
   people = [
     {
-      name: 'Ryan',
-      summary: 'Last hung out yesterday',
-      photo:
-          'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
+      name: 'Jen',
+      summary: 'Had a moment yesterday',
+      photo: 'https://ca.slack-edge.com/T1KAG2BV5-U6TTUFNMS-d1d06567fce7-72',
     },
     {
       name: 'Greg',
-      summary: 'Last hung out Saturday',
-      photo:
-          'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
+      summary: 'Had a moment Saturday',
+      photo: 'https://ca.slack-edge.com/T1KAG2BV5-U6742QJNB-837adc701198-48',
+    },
+    {
+      name: 'Mike',
+      summary: 'Had a moment Saturday',
+      photo: 'https://ca.slack-edge.com/T1KAG2BV5-U6742JEP9-e80927d6b182-72',
     },
     {
       name: 'Justin',
-      summary: 'Last hung out Feb 12',
+      summary: 'Last moment about a month ago',
+      photo: 'https://i.imgur.com/i6UCS1c.png',
+    },
+    {
+      name: 'Brik',
+      summary: 'Last moment about a year ago',
       photo:
-          'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-    }
+          'https://pbs.twimg.com/profile_images/522547950644256768/z7DojeXg.jpeg',
+    },
   ];
 
   constructor() {}

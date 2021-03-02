@@ -24,7 +24,14 @@
   </ion-header>
 
   <ng-container *ngFor="let day of days">
-    <h1 class="header">{{ day.title }}</h1>
+    <h1 class="header">
+      {{ day.title }}
+      <div class="people-list">
+        <ion-avatar slot="start" *ngFor="let person of day.people">
+          <img [src]="person.photo">
+        </ion-avatar>
+      </div>
+    </h1>
     <ion-card *ngFor="let moment of day.moments">
       <ion-card-content>
         <span class="{{ section.type }}" *ngFor="let section of moment.sections">
